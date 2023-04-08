@@ -1,11 +1,8 @@
 package main
 
-import "fmt"
-
-func main() {
-	array := []int{12, 10, 56, 11, 45}
-	fmt.Println(Bubble(array))
-}
+import (
+	"fmt"
+)
 
 func Bubble(array []int) []int {
 	for i := 0; i < len(array)-1; i++ {
@@ -16,4 +13,9 @@ func Bubble(array []int) []int {
 		}
 	}
 	return array
+}
+
+func main() {
+	array := []int{5, 4, 3, 2, 1}
+	fmt.Println(Bubble(array))
 }

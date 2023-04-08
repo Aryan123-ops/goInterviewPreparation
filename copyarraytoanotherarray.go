@@ -11,7 +11,4 @@ func main() {
 	fmt.Println("Array_1: ", my_arr1)
 	fmt.Println("Array_2:", my_arr2)
 
-	my_arr1[0] = "C++"
-	fmt.Println("\nArray_1: ", my_arr1)
-	fmt.Println("Array_2: ", my_arr2)
 }
