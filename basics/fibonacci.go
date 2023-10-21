@@ -1,22 +1,16 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fib := fibonacci(10)
-	fmt.Println(fib)
+	n := 7
+	result := fibonacci(n)
+	fmt.Println("Fibonacci of", n, "is", result)
 }
 
-func fibonacci(n int) []int {
-	fib := make([]int, n)
-
-	fib[0] = 0
-	fib[1] = 1
-
-	for i := 2; i < n; i++ {
-		fib[i] = fib[i-1] + fib[i-2]
+func fibonacci(n int) int {
+	if n <= 1 {
+		return n
 	}
-	return fib
+	return fibonacci(n-1) + fibonacci(n-2)
 }
