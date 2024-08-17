@@ -9,7 +9,7 @@ func main() {
 
 	go func() {
 		sum := 0
-		for i := 0; i < 100; i++ {
+		for i := 0; i < 10; i++ {
 			sum += i
 		}
 		c <- sum

@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 // program to print the status of any web address ! Is it live or not ?
 // for array of websites
 // func main() {
@@ -28,19 +24,3 @@ import (
 // 		fmt.Println(response.StatusCode)
 // 	}
 // }
-
-func main() {
-	arr := [6]string{"This", "is", "a", "Go", "interview", "question"}
-
-	// print original array
-	fmt.Println("Oriignal Array", arr)
-
-	// create slice
-	slicedArr := arr[1:4]
-
-	fmt.Println(slicedArr)
-
-	fmt.Println("length of slice array", len(slicedArr))
-
-	fmt.Println("capacity of sliced array", cap(slicedArr))
-}
